@@ -41,10 +41,10 @@ public:
 // Helper function to print a linked list
 void printList(ListNode* head) {
     while (head != nullptr) {
-        cout << head->val << " -> ";
+        std::cout << head->val << " -> ";
         head = head->next;
     }
-    cout << "nullptr" << endl;
+    std::cout << "nullptr" << endl;
 }
 
 // Helper function to create a linked list from an array
@@ -66,16 +66,16 @@ int main() {
     ListNode* list2 = createList({1, 3, 4});
 
     // Print input lists
-    cout << "List 1: ";
+   std::cout << "List 1: ";
     printList(list1);
-    cout << "List 2: ";
+   std::cout << "List 2: ";
     printList(list2);
 
     // Merge the lists
     ListNode* mergedList = solution.mergeTwoLists(list1, list2);
 
     // Print the merged list
-    cout << "Merged List: ";
+   std::cout << "Merged List: ";
     printList(mergedList);
 
     return 0;
